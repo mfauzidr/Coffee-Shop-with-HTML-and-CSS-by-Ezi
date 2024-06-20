@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Products</title>
+</head>
+
+<body class="main">
+  <nav style="background-color: rgb(11,9,9); position: static;">
+    <div class="left-container">
+      <div class="logo-container">
+        <img src="./assets/img/coffee-white.png" alt="Logo" class="logo">
+        <div class="name">Coffee Shop</div>
+      </div>
+
+      <ul class="nav-links">
+        <li style="border-bottom: 1px solid rgba(255, 137, 6, 1);"><a href="./index.html">Home</a></li>
+        <li><a href="./products.html">Product</a></li>
+      </ul>
+    </div>
+
+    <div class="right-container">
+      <img src="./assets/icons/search.png" alt="Search" class="icon search-icon">
+      <img src="./assets/icons/shopping-cart.png" alt="Cart" class="icon cart-icon">
+      <button class="button signin-button" onclick="window.location.href='login.html'">SignIn</button>
+      <button class="button signup-button" onclick="window.location.href='register.html'">Sign Up</button>
+    </div>
+  </nav>
+
+  <header>
+    <h1>We Provide Good Coffee and Healthy Meals</h1>
+  </header>
+
+  <div>
+    <div class="promo-nav">
+      <div class="promo-header">Today <span class="highlight">Promo</span> </div>
+      <ul class="promo-button">
+        <li>
+          <button class="button-prev">
+            <i class="i-button" data-feather="arrow-left"></i>
+          </button>
+        </li>
+        <li>
+          <button class="button-next">
+            <i class="i-button" data-feather="arrow-right"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="promos-carrousel">
+      <div class="promos-card">
+        <div class="promos-card-items">
+          <img src="./assets/img/promo-1.png" alt="promo-img" />
+          <div class="promo-desc">
+            <strong>HAPPY MOTHER'S DAY!</strong>
+            <p>Get one of our favorite menu for free!</p>
+            <a href="#">Klaim Kupon</a>
+          </div>
+        </div>
+      </div>
+      <div class="promos-card">
+        <div class="promos-card-items">
+          <img src="./assets/img/promo-1.png" alt="promo-img" />
+          <div class="promo-desc">
+            <div style="margin-bottom: 12px;">
+              <strong>HAPPY MOTHER'S DAY!</strong>
+              <p>Get one of our favorite menu for free!</p>
+            </div>
+            <a href="#">Klaim Kupon</a>
+          </div>
+        </div>
+      </div>
+      <div class="promos-card">
+        <div class="promos-card-items">
+          <img src="./assets/img/promo-1.png" alt="promo-img" />
+          <div class="promo-desc">
+            <strong>HAPPY MOTHER'S DAY!</strong>
+            <p>Get one of our favorite menu for free!</p>
+            <a href="#">Klaim Kupon</a>
+          </div>
+        </div>
+      </div>
+      <div class="promos-card">
+        <div class="promos-card-items">
+          <img src="./assets/img/promo-2.png" alt="promo-img" />
+          <div class="promo-desc">
+            <strong>Get a cup of coffee for free on sunday morning</strong>
+            <p>Only at 7 to 9 AM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carrousel-nav">
+      <button class="carrousel-btn"></button>
+      <button class="carrousel-btn"></button>
+      <button class="carrousel-btn"></button>
+      <button class="carrousel-btn"></button>
+    </div>
+  </div>
+  <main class="products">
+    <div class="product-header">Our <span class="highlight">Products</span> </div>
+    <section class="product-section">
+      <aside>
+        <div class="filter-container">
+          <div class="filter-header">
+            <p>Filter</p>
+            <a href="#" class="reset-filter">Reset Filter</a>
+          </div>
+          <form action="" class="filter-options">
+            <label for="search">Search</label>
+            <input class="search-box" type="text" id="search" name="seatch">
+            <label for="category">Category</label>
+            <ul id="category">
+              <li>
+                <input type="checkbox">
+                Favorite Product
+              </li>
+              <li>
+                <input type="checkbox">
+                Coffee
+              </li>
+              <li>
+                <input type="checkbox">
+                Non Coffee
+              </li>
+              <li>
+                <input type="checkbox">
+                Foods
+              </li>
+              <li>
+                <input type="checkbox">
+                Add-On
+              </li>
+            </ul>
+            <label for="sort">Sort By</label>
+            <ul id="sort">
+              <li>
+                <input type="checkbox">
+                Buy 1 Get 1 Free
+              </li>
+              <li>
+                <input type="checkbox">
+                Flash Sale
+              </li>
+              <li>
+                <input type="checkbox">
+                Birthday Package
+              </li>
+              <li>
+                <input type="checkbox">
+                Cheap
+              </li>
+            </ul>
+            <div class="price-range">
+              <label for="range">Range Price</label>
+              <div id="range">
+                <input type="range" id="range1" name="range1" min="0" max="100">
+                <input type="range" id="range2" name="range2" min="0" max="100">
+              </div>
+            </div>
+            <button class="apply-btn" type="button" class="filter-apply">Apply Filter</button>
+          </form>
+        </div>
+      </aside>
+      <div class="product-grids">
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-1.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-2.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-1.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-2.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-1.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products-card-items">
+          <div class="product-tags">Flash Sale!</div>
+          <img src="./assets/img/prod-2.png" alt="">
+          <div class="product-details">
+            <div class="desc">
+              <h2>Hazelnut Latte</h2>
+              <div class="ratings">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                <img src="./assets/img/stars.png" alt="">
+                5.0
+              </div>
+              <p>You can explore the menu that we provide with fun and have their own taste and make your day
+                better.</p>
+              <div class="price"><span class="discount">IDR 20.000</span>IDR 10.000</div>
+              <div class="buy-options">
+                <button type="button" class="buy-btn">Buy</button>
+                <button type="button" class="checkout-btn">
+                  <li><i data-feather="shopping-cart"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer>
+    <div>
+      <div class="footer-col-1">
+        <div class="logo-container">
+          <img src="./assets/img/Coffee.png" alt="">
+          <p>Cofee Shop</p>
+        </div>
+        <div class="description">Coffee Shop is a store that sells some good meals, and especially coffee. We provide
+          high quality beans</div>
+        <div class="copyright">©2020CoffeeStore</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col-2">
+        <div class="section-title">Product</div>
+        <div class="links">
+          <a href="#">Our Product</a>
+          <a href="#">Pricing</a>
+          <a href="#">Locations</a>
+          <a href="#">Countries</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <div class="footer-col-3">
+        <div class="section-title">Engage</div>
+        <div class="links">
+          <a href="#">Partner</a>
+          <a href="#">FAQ</a>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Term of Service</a>
+        </div>
+      </div>
+      <div class="footer-col-4">
+        <div class="section-title">Socia Media</div>
+        <div class="social-media-buttons">
+          <button><img src="./assets/icons/facebook.png" alt="">
+          </button>
+          <button><img src="./assets/icons/twitter.png" alt="">
+          </button>
+          <button><img src="./assets/icons/instagram.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
