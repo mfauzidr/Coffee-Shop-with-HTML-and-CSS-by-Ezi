@@ -2,254 +2,300 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Home</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="main">
-
+  <!-- nav start -->
   <nav>
-    <div class="left-container">
-      <div class="logo-container">
-        <img src="./assets/img/coffee-white.png" alt="Logo" class="logo">
-        <div class="name">Coffee Shop</div>
+    <div class="left-nav">
+      <div class="logo">
+        <img src="./assets/cup-coffee-icon-white.png" />
+        <img src="./assets/text-logo-white.png" />
       </div>
-
-      <ul class="nav-links">
-        <li style="border-bottom: 1px solid rgba(255, 137, 6, 1);"><a href="./index.html">Home</a></li>
-        <li><a href="./products.html">Product</a></li>
-      </ul>
+      <div class="navigation">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./product.html">Product</a>
+      </div>
     </div>
 
-    <div class="right-container">
-      <img src="/assets/icons/search.png" alt="Search" class="icon search-icon">
-      <img src="/assets/icons/shopping-cart.png" alt="Cart" class="icon cart-icon">
-      <button class="button signin-button" onclick="window.location.href='login.html'">SignIn</button>
-      <button class="button signup-button" onclick="window.location.href='register.html'">Sign Up</button>
+    <div class="right-nav">
+      <div class="action">
+        <img src="./assets/search-icon.png" />
+        <img src="./assets/shopping-cart-icon.png" />
+        <img src="./assets/nav-option.png" />
+      </div>
+      <div class="authentication">
+        <a href="./login.html" id="sign-in">Sign In</a>
+        <a href="./register.html" id="sign-up">Sign Up</a>
+      </div>
     </div>
   </nav>
-  <main class="container-1">
-    <div class="section-1">
-      <div class="content-1">
+  <!-- nav end -->
+
+  <!-- landing page start -->
+  <div class="landing-page">
+    <div class="left-page">
+      <div class="content">
         <h1>Start Your Day with Coffee and Good Meals</h1>
-        <p>We provide high-quality beans, good taste, and healthy meals made with love just for you. Start your day with
-          us for a bigger smile!</p>
-        <button>Get Started</button>
-        <div class="stats-container">
-          <div>
+        <p>
+          We provide high quality beans, good taste, and healthy meals made by
+          love just for you. Start your day with us for a bigger smile!
+        </p>
+        <div class="responsive-chat-icon">
+          <button>Get Started</button>
+          <div id="chat-icon">
+            <img src="/assets/chat-icon.png" />
+          </div>
+        </div>
+        <div class="data">
+          <div class="group-data">
             <h1>90+</h1>
             <p>Staff</p>
           </div>
-          <div>
+          <div class="group-data">
             <h1>30+</h1>
             <p>Stores</p>
           </div>
-          <div>
+          <div class="group-data">
             <h1>800+</h1>
             <p>Customer</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="background-1">
-      <button class="chat-button"> <img src="./assets/icons/message-icon.png" alt="message-icon"> </button>
-    </div>
-  </main>
-
-  <section class="container-2">
-    <div class="section-2">
-      <div class="content-2">
-        <h1>We Provide <span class="highlight">Good Coffee</span> and <span class="highlight">Healthy Meals</span></h1>
-        <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-        <ul class="list-box">
-          <li>High quality beans</li>
-          <li>Healthy meals, you can request the ingredients</li>
-          <li>Chat with our staff to get better experience for orderding</li>
-          <li>Free member card with a minimum purchase of IDR 200.000.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="background-2"> </div>
-  </section>
-
-  <div class="container-3">
-    <div class="content-header">
-      <h1>Here is People’s <span class="highlight">Favorite</span></h1>
-      <p>Let’s choose and have a bit taste of poeple’s favorite. It might be yours too!</p>
-    </div>
-  </div>
-
-  <div class="container-4">
-    <div class="content-4">
-      <div class="products-card">
-        <img src="./assets/img/home-p-1.png" alt="product">
-        <div class="product-details">
-          <div class="desc">
-            <h2>Hazelnut Latte</h2>
-            <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-            <h2 class="price">IDR 20.000</h2>
-            <div class="prod-btn">
-              <button class="buy">Buy</button>
-              <button class="cart">
-                <img src="./assets/icons/shopping-cart-2.png" alt="">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="products-card">
-        <img src="./assets/img/home-p-2.png" alt="product">
-        <div class="product-details">
-          <div class="desc">
-            <h2>Hazelnut Latte</h2>
-            <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-            <h2 class="price">IDR 20.000</h2>
-            <div class="prod-btn">
-              <button class="buy">Buy</button>
-              <button class="cart">
-                <img src="./assets/icons/shopping-cart-2.png" alt="">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="products-card">
-        <img src="./assets/img/home-p-3.png" alt="product">
-        <div class="product-details">
-          <div class="desc">
-            <h2>Hazelnut Latte</h2>
-            <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-            <h2 class="price">IDR 20.000</h2>
-            <div class="prod-btn">
-              <button class="buy">Buy</button>
-              <button class="cart">
-                <img src="./assets/icons/shopping-cart-2.png" alt="">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="products-card">
-        <img src="./assets/img/home-p-4.png" alt="product">
-        <div class="product-details">
-          <div class="desc">
-            <h2>Hazelnut Latte</h2>
-            <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-            <h2 class="price">IDR 20.000</h2>
-            <div class="prod-btn">
-              <button class="buy">Buy</button>
-              <button class="cart">
-                <img src="./assets/icons/shopping-cart-2.png" alt="">
-              </button>
-            </div>
-          </div>
-        </div>
+    <div class="right-page">
+      <div id="chat-icon">
+        <img src="/assets/chat-icon.png" />
       </div>
     </div>
   </div>
-  <div class="container-5">
-    <div>
-      <div class="content-header">
-        <h1><span class="highlight">Visit our store</span> in the Spot on Map Below</h1>
-        <p>You can explore the menu that we provide with fun and have their own taste and make your day better.</p>
-      </div>
-      <div class="maps">
-        <img src="./assets/img/maps.png" alt="maps">
-      </div>
-    </div>
-  </div>
-  <div class="container-6">
-    <div class="reviews">
-      <div class="profile">
-        <img src="./assets/img/profile.png" alt="profile">
-      </div>
-      <div class="testimoni">
-        <p>TESTIMONIAL</p>
-        <h1>Viezh Robert</h1>
-        <p class="pos">Manager Coffee Shop</p>
-        <p>“Wow... I am very happy to spend my whole day here. the Wi-fi is good, and the coffee and meals tho. I like
-          it here!! Very recommended!</p>
-        <div>
-          <p class="ratings">
-            <img src="./assets/img/stars.png" alt="">
-            <img src="./assets/img/stars.png" alt="">
-            <img src="./assets/img/stars.png" alt="">
-            <img src="./assets/img/stars.png" alt="">
-            <img src="./assets/img/stars.png" alt="">
-            5.0
+  <!-- landing page end -->
+
+  <!-- introduction start -->
+  <div class="introduction">
+    <div class="provide-list">
+      <div class="list">
+        <div class="content">
+          <div>
+            <hr />
+            <h1>
+              We Provide <span>Good Coffee</span> and
+              <span>Healthy Meals</span>
+            </h1>
+          </div>
+          <p>
+            You can explore the menu that we provide with fun and have their
+            own taste and make your day better.
           </p>
+          <div class="list-check">
+            <div class="group-list-check">
+              <img src="./assets/green-check-circle.png" />
+              <p>High quality beans</p>
+            </div>
+
+            <div class="group-list-check">
+              <img src="./assets/green-check-circle.png" />
+              <p>Healthy meals, you can request the ingredients</p>
+            </div>
+
+            <div class="group-list-check">
+              <img src="./assets/green-check-circle.png" />
+              <p>Free member card with a minimum purchase of IDR 200.000.</p>
+            </div>
+
+            <div class="group-list-check">
+              <img src="./assets/green-check-circle.png" />
+              <p>Chat with our staff to get better experience for ordering</p>
+            </div>
+          </div>
         </div>
-        <div class="nxt-prev">
-          <button class="prev">
-            <img src="./assets/img/arrow-up.png" alt="">
-          </button>
-          <button class="next">
-            <img src="./assets/img/arrow-up.png" alt="">
-          </button>
+      </div>
+
+      <div class="staff-image"></div>
+    </div>
+
+    <div class="favorite-product">
+      <div class="title">
+        <h1>Here is People's <span>Favorite</span></h1>
+        <hr />
+        <p>
+          Let's choose and have a bit taste of poeple's favorite. It might be
+          yours too!
+        </p>
+      </div>
+
+      <div class="list-products">
+        <div class="product">
+          <img src="./assets/home-product1.jpg" alt="" />
+          <div class="product-details">
+            <h1 id="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <h1 id="product-price">IDR 20.000</h1>
+            <div class="order">
+              <button>Buy</button>
+              <img src="./assets/shopping-cart-icon-orange.png" />
+            </div>
+          </div>
         </div>
-        <div class="dot">
-          <button class="current"></button>
-          <button></button>
-          <button></button>
-          <button></button>
+
+        <div class="product">
+          <img src="./assets/home-product2.jpg" alt="" />
+          <div class="product-details">
+            <h1 id="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <h1 id="product-price">IDR 20.000</h1>
+            <div class="order">
+              <button>Buy</button>
+              <img src="./assets/shopping-cart-icon-orange.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="./assets/home-product3.jpg" alt="" />
+          <div class="product-details">
+            <h1 id="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <h1 id="product-price">IDR 20.000</h1>
+            <div class="order">
+              <button>Buy</button>
+              <img src="./assets/shopping-cart-icon-orange.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="./assets/home-product4.png" alt="" />
+          <div class="product-details">
+            <h1 id="product-name">Hazelnut Latte</h1>
+            <p>
+              You can explore the menu that we provide with fun and have their
+              own taste and make your day better.
+            </p>
+            <h1 id="product-price">IDR 20.000</h1>
+            <div class="order">
+              <button>Buy</button>
+              <img src="./assets/shopping-cart-icon-orange.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- introduction end -->
 
-  <footer>
+  <!-- map start -->
+  <div class="map">
+    <div class="title">
+      <h1><span>Visit Our Store</span> in the Spot on the Map Below</h1>
+      <hr />
+      <p>
+        You can explore the menu that we provide with fun and have their own
+        taste and make your day better.
+      </p>
+    </div>
     <div>
-      <div class="footer-col-1">
-        <div class="logo-container">
-          <img src="./assets/img/Coffee.png" alt="">
-          <p>Cofee Shop</p>
+      <img src="/assets/home-map.png" />
+      <img src="./assets/map-responsive.png" />
+    </div>
+  </div>
+  <!-- map end -->
+
+  <!-- testimonial start -->
+  <div class="testimonial">
+    <div id="customer-image">
+      <img src="./assets/home-customer-image1.jpg" alt="" />
+    </div>
+    <div class="testi">
+      <p id="testi-title">TESTIMONIAL</p>
+      <h1 id="customer-name">Viezh Robert</h1>
+      <p id="role">Manager Coffe Shop</p>
+      <p id="review-message">
+        “Wow... I am very happy to spend my whole day here. the Wi-fi is good,
+        and the coffee and meals tho. I like it here!! Very recommended!
+      </p>
+      <div class="rating">
+        <div class="rating-stars">
+          <img src="/assets/star.png" />
+          <img src="/assets/star.png" />
+          <img src="/assets/star.png" />
+          <img src="/assets/star.png" />
+          <img src="/assets/star.png" />
         </div>
-        <div class="description">Coffee Shop is a store that sells some good meals, and especially coffee. We provide
-          high quality beans</div>
-        <div class="copyright">©2020CoffeeStore</div>
+        <p id="rating-number">5.0</p>
+      </div>
+      <div class="button-swipe">
+        <img src="/assets/arrow-prev.png" id="arrow-prev" />
+        <img src="/assets/arrow-next.png" id="arrow-next" />
+      </div>
+      <div class="page-indicator">
+        <div class="current-page">
+          <div id="left-corner"></div>
+          <div id="right-corner"></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-    <div class="footer-links">
-      <div class="footer-col-2">
-        <div class="section-title">Product</div>
-        <div class="links">
-          <a href="#">Our Product</a>
-          <a href="#">Pricing</a>
-          <a href="#">Locations</a>
-          <a href="#">Countries</a>
-          <a href="#">Blog</a>
-        </div>
+  </div>
+  <!-- testimonial end -->
+
+  <!-- footer start -->
+  <footer>
+    <div class="description">
+      <div class="logo">
+        <img src="./assets/cup-coffe-icon.png" />
+        <img src="./assets/text-logo.png" />
       </div>
-      <div class="footer-col-3">
-        <div class="section-title">Engage</div>
-        <div class="links">
-          <a href="#">Partner</a>
-          <a href="#">FAQ</a>
-          <a href="#">About Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Term of Service</a>
-        </div>
-      </div>
-      <div class="footer-col-4">
-        <div class="section-title">Socia Media</div>
-        <div class="social-media-buttons">
-          <button><img src="./assets/icons/facebook.png" alt="">
-          </button>
-          <button><img src="./assets/icons/twitter.png" alt="">
-          </button>
-          <button><img src="./assets/icons/instagram.png" alt="">
-          </button>
-        </div>
+      <p>
+        Coffee Shop is a store that sells some good meals, and especially
+        coffee. We provide high quality beans
+      </p>
+      <p id="copyright">&copy;2020CoffeeStore</p>
+    </div>
+
+    <div class="product-link">
+      <p>Product</p>
+      <a href="#">Our Product</a>
+      <a href="#">Pricing</a>
+      <a href="#">Location</a>
+      <a href="#">Countries</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="engage">
+      <p>Engage</p>
+      <a href="#">Partner</a>
+      <a href="#">FAQ</a>
+      <a href="#">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+
+    <div class="social-media">
+      <p>Social Media</p>
+      <div class="link-social-media">
+        <a href="#"><img src="/assets/facebook-logo-circle.png" /></a>
+        <a href="#"><img src="/assets/twitter-logo-circle.png" /></a>
+        <a href="#"><img src="/assets/instagram-logo-circle.png" /></a>
       </div>
     </div>
   </footer>
-
+  <!-- footer end -->
 </body>
 
 </html>

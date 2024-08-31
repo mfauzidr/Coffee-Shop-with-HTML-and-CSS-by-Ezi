@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Register</title>
-</head>
+  <body class="auth register-page">
+    <div class="leftPage"></div>
+    <div class="rightPage">
+      <div class="content">
+        <div class="logo">
+          <div class="logo-items">
+            <img src="./assets/cup-coffe-icon.png" />
+            <img src="/assets/text-logo.png" id="logo-text" />
+          </div>
+        </div>
+        <div class="form">
+          <h1>Register</h1>
+          <p>Fill out the form correctly</p>
 
-<body class="auth">
-  <section class="register-bg"></section>
+          <form>
+            <div class="input-group">
+              <label for="full-name">Full Name</label>
+              <div class="input">
+                <img src="/assets/fullname.png" />
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Enter Your Full Name"
+                />
+              </div>
+            </div>
 
-  <section class="form-section">
-    <div class="logo-container">
-      <img src="./assets/img/Coffee.png" alt="Logo">
-      <div class="name">Coffee Shop</div>
-    </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <div class="input">
+                <img src="/assets/mail.png" />
+                <input id="email" type="email" placeholder="Enter Your Email" />
+              </div>
+            </div>
 
-    <div class="input-form">
-      <div class="input-tittle">
-        <h2>Register</h2>
-        <p style="height: 20px;">Fill out the form correctly</p>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <div class="input">
+                <img src="/assets/password.png" />
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="confirm-password">Confirm Password</label>
+              <div class="input">
+                <img src="/assets/password.png" />
+                <input
+                  id="confirm-password"
+                  type="password"
+                  placeholder="Enter Your Password Again"
+                />
+              </div>
+            </div>
+
+            <button type="button" id="register-login-submit">Register</button>
+          </form>
+
+          <div class="login-register">
+            <p>Have An Account?</p>
+            <a href="./login.html">Login</a>
+          </div>
+
+          <div class="or">
+            <hr />
+            <p>Or</p>
+            <hr />
+          </div>
+
+          <div class="buttons">
+            <button id="facebook">
+              <img src="/assets/facebook-logo.png" alt="" />
+              <p>Facebook</p>
+            </button>
+            <button id="google">
+              <img src="/assets/google-logo.png" alt="" />
+              <p>Google</p>
+            </button>
+          </div>
+        </div>
       </div>
-      <form action="">
-        <div>
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name">
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter Your Email">
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter Your Password">
-        </div>
-        <div>
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter Your Password Again">
-        </div>
-
-        <button class="form-button" type="submit">Register</button>
-      </form>
     </div>
-
-    <div class="login-section">
-      <div>Have An Account? <a href="/login.html">Login</a></div>
-    </div>
-
-    <img src="./assets/img/or.png" alt="or">
-
-    <div class="login-options">
-      <button>
-        <img src="./assets/icons/facebook-icon.png" alt="Facebook Icon">
-        Facebook
-      </button>
-      <button>
-        <img src="./assets/icons/google-icon.png" alt="Google Icon">
-        Google
-      </button>
-    </div>
-  </section>
-</body>
-
+  </body>
 </html>
